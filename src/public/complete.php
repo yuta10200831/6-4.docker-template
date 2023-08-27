@@ -3,12 +3,14 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $phone_number = $_POST["phone_number"];
 
+// エラーメッセージの表示
 $errors = [];
 if (empty($name) || empty($email) || empty($phone_number))
 {
   $errors[] = '「予約者名」 「Email」 「電話番号」のどれかが記入されておりません！';
 }
 
+// データベースへの接続
   $dbUserName = 'root';
   $dbPassword = 'password';
   $pdo = new PDO(
