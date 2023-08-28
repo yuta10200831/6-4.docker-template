@@ -54,6 +54,7 @@ if (empty($name) || empty($email) || empty($phone_number))
     <?php if(empty($errors)): ?>
       <h2>予約完了＾＾</h2>
       <a href="index.php">予約画面へ</a><br>
+      <a href="history.php">予約履歴へ</a><br>
     <?php endif; ?>
   </div>
 </body>
